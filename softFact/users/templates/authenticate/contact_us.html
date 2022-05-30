@@ -1,0 +1,95 @@
+{% extends 'main/base.html' %}
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<style>
+.contact-section{
+margin-top: 50px;
+  padding: 40px 0;
+
+}
+.contact-section h1{
+  text-align: center;
+  color: black;
+}
+.border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  background: none;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+background: none;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border:none;
+  border: 1px solid #ccc;
+  background: none;
+  padding: 20px 40px;
+  outline: none;ss
+  color: #ddd;
+  transition: 0.5s;
+box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;x;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+  background: #fff;
+  color: #262626;
+  font-size: 14px;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+</style>
+	<!-- end #menu -->
+  <div id="page">
+<div class="contact-section">
+  <h1>Contact Us</h1>
+  <div class="border"></div>
+  <form class="contact-form" action="index.html" method="post">
+    <input type="text" class="contact-form-text" placeholder="Your name">
+    <input type="email" class="contact-form-text" placeholder="Your email">
+    <input type="text" class="contact-form-text" placeholder="Your phone">
+    <textarea class="contact-form-text" placeholder="Your message"></textarea>
+    <input type="submit" class="contact-form-btn" value="Send">
+  </form>
+</div>
+  <ul class="colorlib-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  </div>
+{% endblock %}

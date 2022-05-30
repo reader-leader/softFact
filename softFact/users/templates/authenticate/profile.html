@@ -1,0 +1,52 @@
+{% extends 'main/base.html' %}
+{% block title %}Register{% endblock %}
+
+{% block content %}
+  <div id="page">
+
+    <div class="profile-content">
+                <div class="row">
+                  <div class="col-md-6 ml-auto mr-auto">
+                     <div class="profile">
+                          <div class="avatar" >
+                              <img src="https://cdn4.iconfinder.com/data/icons/minimal-8/24/profile-512.png" width="300" height="300" alt="Circle Image" class="img-raised rounded-circle img-fluid">
+                          </div>
+                          <div class="name">
+                              <h3 class="title">{{user.username}}</h3>
+                </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="description text-center" >
+                    <p>Information about User</p>
+                </div>
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto">
+                        <div class="profile-tabs">
+                          <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="tab" data-toggle="tab">
+                                  <i class="material-icons">favorite</i>
+                                    Favorites
+                                </a>
+                            </li>
+                          </ul>
+                        </div>
+            </div>
+            </div>
+  </div>
+  <ul class="colorlib-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  </div>
+	<!-- end #page -->
+{% endblock %}
